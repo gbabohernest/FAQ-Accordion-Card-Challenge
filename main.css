@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section_faq {
+  width: 60%;
+  min-height: 70vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 50em 53em;
+  background-position: -23em -12em;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px 0 hsl(238, 29%, 16%);
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  background-image: url("images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -4rem 3rem;
+  position: relative;
+}
+
+.image #mobile_view {
+  display: none;
+}
+
+.image #desktop_box {
+  position: absolute;
+  bottom: 5rem;
+  left: -4.5rem;
+}
+
+.faq-wrapper {
+  width: 55%;
+  padding: 6% 10% 5% 2%;
+}
+
+.faq-wrapper ul {
+  position: relative;
+  top: 10%;
+  list-style: none;
+}
+
+.faq-wrapper ul li {
+  border-bottom: solid 1px rgb(226, 226, 226);
+  padding: 4% 0;
+}
+
+.faq-wrapper h4 {
+  color: rgb(70, 70, 70);
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+.faq-wrapper h4:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.faq-wrapper h4::after {
+  content: url("images/icon-arrow-down.svg");
+  position: absolute;
+  right: 0;
+}
+
+.faq-wrapper p {
+  display: none;
+  font-size: 0.9em;
+  color: rgb(100, 100, 100);
+  line-height: 1.6em;
+  margin: 3.5% 5% 0 0;
+}
+
+.mostrar p {
+  display: block;
+}
+
+.mostrar h4::after {
+  content: url("images/icon-arrow-down.svg");
+  transform: rotate(180deg);
+}
+
+.attribution {
+  text-align: center;
+  /* color: #eee; */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+  .section_faq {
+    width: 65%;
+    min-height: 55vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 45em 52em;
+    background-position: -22em -12em;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px 0 hsl(238, 29%, 16%);
+    display: flex;
+  }
+
+  .image {
+    width: 50%;
+    background-image: url("images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -5rem 2rem;
+    background-size: 24rem 18rem;
+  }
+
+  .image #mobile_view {
+    display: none;
+  }
+
+  .image #desktop_box {
+    position: absolute;
+    bottom: 7rem;
+    left: -4.5rem;
+    width: 9.1em;
+  }
+
+  .faq-wrapper {
+    width: 52%;
+    padding: 6% 5% 5% 0;
+  }
+
+  .faq-wrapper ul {
+    position: relative;
+    top: 8%;
+    list-style: none;
+  }
+
+  .faq-wrapper ul li {
+    border-bottom: solid 1px rgb(226, 226, 226);
+    padding: 5% 0;
+  }
+
+  .faq-wrapper h4 {
+    color: rgb(70, 70, 70);
+    font-weight: lighter;
+    font-size: 1.03em;
+  }
+
+  .faq-wrapper p {
+    font-size: 0.9em;
+    color: rgb(100, 100, 100);
+    line-height: 1.6em;
+    margin: 3.5% 5% 0 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    min-height: 100vh;
+    margin: 10em 0;
+  }
+
+  .section_faq {
+    width: 85%;
+    min-height: 65vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 21em 9em;
+    background-position: top center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px 0 hsl(238, 29%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    height: 10em;
+  }
+
+  .image #mobile_view {
+    width: 25em;
+    height: 15em;
+    display: inline-block;
+    position: relative;
+    bottom: 7.5rem;
+    right: 1rem;
+  }
+
+  .image #desktop_box {
+    display: none;
+  }
+
+  .faq-wrapper {
+    width: 80%;
+    padding: 4% 1%;
+  }
+
+  .faq-wrapper h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .faq-wrapper ul {
+    position: relative;
+    top: 8%;
+    list-style: none;
+  }
+
+  .faq-wrapper ul li {
+    border-bottom: solid 1px rgb(226, 226, 226);
+    padding: 6% 0;
+  }
+
+  .faq-wrapperh4 {
+    color: rgb(70, 70, 70);
+    font-weight: lighter;
+    font-size: 1.03em;
+    line-height: 1.5em;
+  }
+
+  .faq-wrapper p {
+    font-size: 0.9em;
+    color: rgb(100, 100, 100);
+    line-height: 1.6em;
+    margin: 3.5% 5% 0 0;
+  }
+}
